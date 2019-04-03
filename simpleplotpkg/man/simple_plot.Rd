@@ -6,15 +6,9 @@
 \usage{
 simple_plot()
 }
-\arguments{
-\item{love}{Do you love cats? Defaults to TRUE.}
+\value{
+a plot from the queries.
 }
 \description{
-This function allows you to connect to the db, get the queries and plot them
+A simple_plot Function
 }
-\examples{
-cat_function()
-
-
-}
-\keyword{cats}

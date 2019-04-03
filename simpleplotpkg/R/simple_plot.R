@@ -1,22 +1,11 @@
 #' A simple_plot Function
 #'
-#' This function allows you to connect to the db, get the queries and plot them
-#' @param love Do you love cats? Defaults to TRUE.
-#' @keywords cats
-#' @export
-#' @examples
-#' cat_function()
-#' 
-#' 
-# DEPENDENCIAS
-#install.packages("RMySQL", "ggplot2", "RColorBrewer") 
+#' @return a plot from the queries.
+
+
+# TO DOWNLOAD PLS install_github("oaa97181/simpleplotpkg", force=TRUE)
 
 simple_plot <- function(){
-
-
-library(RMySQL)
-library(ggplot2)
-library(RColorBrewer)
 
 mydb = dbConnect(MySQL(), 
                  user="guest", 
@@ -83,8 +72,5 @@ gg + theme(axis.title.x=element_text(vjust=0, size=25),  # X axis title
       legend.text = element_text(size=15),
       legend.key.size = unit(1, "cm")
       ) 
-  
-
-
 
 }

@@ -1,10 +1,22 @@
 Package: simpleplotpkg
-Title: What the Package Does (one line, title case)
+Title: This package plots some queries from "pulmondb"
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.5.3)
-License: What license is it under?
+Authors@R: as.person(c(
+    "Alejandra Medina.... <@> [aut,own]", 
+    "Oscar Aldana  <oaa97181@gmail.com> [cre]", 
+    "Ana Beatriz.... <@> [aut]"
+  ))
+Description: Plots queries into a beautiful format
+    so users can see what pulmonDB's raw data is 
+    capable of.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1.9000
+Imports: 
+    RMySQL (>= 0.10.17),
+    ggplot2 (>= 3.1.0),
+    RColorBrewer (>= 1.1-2)
+URL: pulmonDB.com
+BugReports: https://github.com/oaa97181/simpleplotpkg/issues
